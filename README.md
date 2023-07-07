@@ -6,6 +6,9 @@ Welcome to my GitHub profile! I'm Anurag, a full stack based software engineer a
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-anurag--yadav--10-blue?logo=linkedin&labelColor=black)](https://www.linkedin.com/in/anurag-yadav-10) [![Gmail](https://img.shields.io/badge/Gmail-anuragdyadav2001-red?logo=gmail&labelColor=black)](mailto:anuragdyadav2001@gmail.com) [![CodeChef](https://img.shields.io/badge/CodeChef-AnuMessi10-brown?logo=codechef&labelColor=black)](https://www.codechef.com/users/anumessi10)
 
+### 👓 Profile Views
+![visitors](https://profile-counter.glitch.me/anumessi10/count.svg?align=center)
+
 ## ⚒ Tech Stacks
 
 ### 👩🏻‍💻 Languages
