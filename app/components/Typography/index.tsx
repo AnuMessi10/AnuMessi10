@@ -1,6 +1,7 @@
 import { PropsWithChildren, createElement, forwardRef } from "react";
 import { TTypographyColor, TTypographyVariant } from "./@types";
 import { twMerge } from "tailwind-merge";
+import styles from "./index.module.scss";
 
 export interface TypographyProps {
     variant?: TTypographyVariant;
@@ -24,7 +25,8 @@ const Typography = forwardRef<HTMLElement, PropsWithChildren<TypographyProps>>(
             {
                 ...{
                     className: twMerge(
-                        getFontStyles(variant, color),
+                        styles[variant],
+                        getColorStyle(color),
                         className
                     ),
                     ...props,
@@ -42,29 +44,6 @@ const mapVariantToTag: Record<TTypographyVariant, keyof JSX.IntrinsicElements> =
         body: "p",
         caption: "span",
     };
-
-const getFontStyles = (
-    variant: TTypographyVariant,
-    color: TTypographyColor
-) => {
-    const colorStyle = getColorStyle(color);
-    switch (variant) {
-        case "h1":
-            return `font-bold text-4xl leading-10 tracking-tighter ${colorStyle}`;
-
-        case "h2":
-            return `font-bold text-2xl leading-10 tracking-tighter ${colorStyle}`;
-
-        case "h3":
-            return `font-bold text-xl leading-10 tracking-tighter ${colorStyle}`;
-
-        case "body":
-            return `font-normal text-base ${colorStyle}`;
-
-        case "caption":
-            return `font-normal text-xs leading-6 ${colorStyle}`;
-    }
-};
 
 const getColorStyle = (color: TTypographyColor) => {
     switch (color) {

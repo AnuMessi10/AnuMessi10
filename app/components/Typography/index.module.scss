@@ -1,0 +1,19 @@
+.h1 {
+    @apply font-bold text-4xl leading-10 tracking-tighter;
+}
+
+.h2 {
+    @apply font-bold text-2xl leading-10 tracking-tighter;
+}
+
+.h3 {
+    @apply font-bold text-xl leading-10 tracking-tighter;
+}
+
+.p {
+    @apply font-normal text-base;
+}
+
+.span {
+    @apply font-normal text-xs leading-6;
+}
