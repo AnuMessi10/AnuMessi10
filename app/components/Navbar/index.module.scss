@@ -1,0 +1,11 @@
+.navbar {
+    @apply w-full sticky top-0 h-16 flex items-center border-b;
+
+    .navlinks-ctn {
+        @apply relative left-[90%] lg:left-[60%];
+
+        .navlink {
+            @apply text-brand-500 font-normal text-base leading-6 mx-6;
+        }
+    }
+}

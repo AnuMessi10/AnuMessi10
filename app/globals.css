@@ -6,3 +6,9 @@
     @apply text-dark-900;
     font-style: normal;
 }
+
+@layer utilities {
+    .blade {
+        @apply px-5;
+    }
+}
