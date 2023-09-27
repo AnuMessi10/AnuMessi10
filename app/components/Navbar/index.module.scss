@@ -1,5 +1,5 @@
 .navbar {
-    @apply w-full sticky top-0 h-16 flex items-center border-b;
+    @apply w-full sticky top-0 h-16 flex items-center border-b bg-white z-10;
 
     .navlinks-ctn {
         @apply relative left-[90%] lg:left-[60%];
