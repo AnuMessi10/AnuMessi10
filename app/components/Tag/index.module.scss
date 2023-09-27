@@ -1,0 +1,7 @@
+.tag {
+    @apply border border-brand-500 rounded-sm py-1 px-2;
+}
+
+.tag:hover {
+    background: linear-gradient(to right, #f4debe, #ecebff);
+}
