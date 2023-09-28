@@ -3,15 +3,9 @@ import React, { FC } from "react";
 import styles from "./index.module.scss";
 import Typography from "../Typography";
 import Tag from "../Tag";
+import { IProjectCard } from "./@types";
 
-export interface IProjectCardProps {
-    title: string;
-    tags: string[];
-    description: string;
-    image: string;
-    repoLink?: string;
-    demoLink?: string;
-}
+export interface IProjectCardProps extends IProjectCard {}
 
 const ProjectCard: FC<IProjectCardProps> = ({
     title,
@@ -24,7 +18,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
     return (
         <div className={styles["project-card"]}>
             <Image
-                src={image}
+                src={image.img}
                 alt={title}
                 height={400}
                 width={300}
@@ -38,14 +32,12 @@ const ProjectCard: FC<IProjectCardProps> = ({
                 >
                     {title}
                 </Typography>
-                <div>
-                    <div className="flex gap-x-1">
-                        {tags.map((tag) => (
-                            <Tag key={tag} className="min-w-fit w-fit">
-                                {tag}
-                            </Tag>
-                        ))}
-                    </div>
+                <div className="flex gap-2 flex-wrap">
+                    {tags.map((tag) => (
+                        <Tag key={tag} className="min-w-fit w-fit">
+                            {tag}
+                        </Tag>
+                    ))}
                 </div>
                 <Typography className="my-4">{description}</Typography>
             </div>

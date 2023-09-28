@@ -2,7 +2,7 @@
     @apply border flex flex-col;
 
     .cover-image {
-        @apply h-auto w-auto object-cover;
+        @apply h-auto w-auto object-cover aspect-[16/9];
     }
 
     .project-content {

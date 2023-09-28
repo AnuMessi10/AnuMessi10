@@ -1,18 +1,24 @@
-import ProjectCard, { IProjectCardProps } from "@/app/components/ProjectCard";
+import ProjectCard from "@/app/components/ProjectCard";
+import { IProjectCard } from "@/app/components/ProjectCard/@types";
 import Typography from "@/app/components/Typography";
 import React, { FC } from "react";
+import styles from "./index.module.scss";
+import { twMerge } from "tailwind-merge";
 
 export interface IProjectSectionProps {
-    projects: IProjectCardProps[];
+    projects: IProjectCard[];
 }
 
 const Projects: FC<IProjectSectionProps> = ({ projects }) => {
     return (
-        <div className="lg:px-80 mt-28">
+        <section
+            id="projects"
+            className={twMerge(styles["projects-section"], "blade")}
+        >
             <Typography variant="h1" color="tertiary" className="mb-8">
                 Latest Projects
             </Typography>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div className={styles["projects-grid"]}>
                 {projects.map(({ title, ...projectCardProps }) => (
                     <ProjectCard
                         key={title}
@@ -21,7 +27,7 @@ const Projects: FC<IProjectSectionProps> = ({ projects }) => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

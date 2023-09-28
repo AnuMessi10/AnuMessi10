@@ -19,7 +19,7 @@ const Navbar: FC<INavbarProps> = (props) => {
                 {isSmallDevice ? (
                     <div>Icon</div>
                 ) : (
-                    <>
+                    <div>
                         {navLinks.map(({ name, href }) => (
                             <Link
                                 href={href}
@@ -33,7 +33,7 @@ const Navbar: FC<INavbarProps> = (props) => {
                                 {name}
                             </Link>
                         ))}
-                    </>
+                    </div>
                 )}
             </div>
         </nav>
