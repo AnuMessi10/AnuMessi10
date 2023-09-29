@@ -3,37 +3,37 @@ import React, { FC } from "react";
 import { twMerge } from "tailwind-merge";
 import styles from "./index.module.scss";
 
-export interface IHeroSectionProps {}
+export interface IHomeSectionProps {}
 
-const HeroSection: FC<IHeroSectionProps> = () => {
+const HomeSection: FC<IHomeSectionProps> = () => {
     return (
-        <section id="hero" className={twMerge(styles.hero, "blade")}>
+        <section id="home" className={twMerge(styles.home, "blade")}>
             <div>
                 <Typography variant="h1">I&apos;m Anurag Yadav!</Typography>
                 <Typography
                     variant="h3"
                     color="primary"
-                    className={twMerge(styles["hero-section-content"], "mt-2")}
+                    className={twMerge(styles["home-section-content"], "mt-2")}
                 >
                     <div className="inline">
                         <Typography
                             variant="h3"
                             color="secondary"
                             className={twMerge(
-                                styles["hero-section-content"],
+                                styles["home-section-content"],
                                 "inline"
                             )}
                         >
                             Software Engineer
                         </Typography>
-                    </div>{" "}
-                    and{" "}
+                    </div>
+                    <span> and </span>
                     <div className="inline">
                         <Typography
                             variant="h3"
                             color="secondary"
                             className={twMerge(
-                                styles["hero-section-content"],
+                                styles["home-section-content"],
                                 "inline"
                             )}
                         >
@@ -50,4 +50,4 @@ const HeroSection: FC<IHeroSectionProps> = () => {
     );
 };
 
-export default HeroSection;
+export default HomeSection;
