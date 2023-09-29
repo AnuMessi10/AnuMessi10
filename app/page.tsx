@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import HeroSection from "./sections/hero";
+import HeroSection from "./sections/Hero";
 import Projects from "./sections/Projects";
 import { projectCardsConfig } from "./sections/Projects/projects";
 
