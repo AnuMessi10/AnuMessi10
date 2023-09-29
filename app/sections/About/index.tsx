@@ -43,7 +43,7 @@ const About: FC<IAboutProps> = () => {
                 </Typography>
                 <div className="flex flex-wrap space-x-2 space-y-2">
                     {techStack.map((tech) => (
-                        <Tag key={tech} className="w-fit h-fit">
+                        <Tag key={tech} className="first:mt-2 w-fit h-fit">
                             {tech}
                         </Tag>
                     ))}
