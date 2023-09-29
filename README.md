@@ -4,7 +4,7 @@
 
 Welcome to my GitHub profile! I'm Anurag, a full stack based software engineer and developer passionate about building innovative solutions to foster something for all of humankind. I have nearly 2 years of hands on experience in building products in MERN as well as other sizzling tech stacks. Feel free to explore my repositories and reach out to me.
 
-🌐 [Portfolio Website](https://anuragy.com) | Build Status - [![Netlify Status](https://api.netlify.com/api/v1/badges/22d77b1c-a42b-40b6-85c2-8688f7fbcb47/deploy-status)](https://app.netlify.com/sites/anuragy/deploys) 
+🌐 [Portfolio Website](https://anuragy.com) | 🛠 Build Status - [![Netlify Status](https://api.netlify.com/api/v1/badges/22d77b1c-a42b-40b6-85c2-8688f7fbcb47/deploy-status)](https://app.netlify.com/sites/anuragy/deploys) 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-anurag--yadav--10-blue?logo=linkedin&labelColor=black)](https://www.linkedin.com/in/anurag-yadav-10) [![Gmail](https://img.shields.io/badge/Gmail-anuragdyadav2001-red?logo=gmail&labelColor=black)](mailto:anuragdyadav2001@gmail.com) [![CodeChef](https://img.shields.io/badge/CodeChef-AnuMessi10-brown?logo=codechef&labelColor=black)](https://www.codechef.com/users/anumessi10)
 
