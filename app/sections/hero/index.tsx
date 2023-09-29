@@ -7,11 +7,9 @@ export interface IHeroSectionProps {}
 
 const HeroSection: FC<IHeroSectionProps> = () => {
     return (
-        <section className="blade flex flex-col items-center justify-center">
+        <section id="hero" className={twMerge(styles.hero, "blade")}>
             <div>
-                <Typography variant="h1" className="mt-8">
-                    I&apos;m Anurag Yadav!
-                </Typography>
+                <Typography variant="h1">I&apos;m Anurag Yadav!</Typography>
                 <Typography
                     variant="h3"
                     color="primary"
