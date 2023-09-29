@@ -1,0 +1,16 @@
+export const techStack = [
+    "React",
+    "TypeScript",
+    "Redux",
+    "React Native",
+    "Tailwind",
+    "Node",
+    "NestJS",
+    "Express",
+    "SQL",
+    "MongoDB",
+    "PostgreSQL",
+    "REST API",
+    "Git",
+    "GitHub",
+];
